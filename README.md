@@ -22,7 +22,7 @@ Este curso se separa en varios notebooks (capítulos)
 
 
 
-Este es un tutorial de introducción a python 3. Para un resumen/torpedo de  toda la syntaxis de python puedes ir al siguiente link [Quick Reference Card](http://www.cs.put.poznan.pl/csobaniec/software/python/py-qrc.html) may be useful. Una version mas detallada a este tutorial esta disponible en la documentación oficial de python. https://docs.python.org/3/tutorial/
+Este es un tutorial de introducción a python 3. Para un resumen/torpedo de  toda la syntaxis de python puedes ir al siguiente link [Syntax Python](http://www.cs.put.poznan.pl/csobaniec/software/python/py-qrc.html) la cual será de ayuda para el resto del curso. Una versión más detallada de este tutorial esta disponible en la documentación oficial de python. https://docs.python.org/3/tutorial/
 
 # Introducción
 
