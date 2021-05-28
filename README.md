@@ -4,14 +4,14 @@
 
 Este curso se separa en varios notebooks (capítulos)
 
-* [00](00.ipynb) Introducción a Python y como empezar a correrlo en Google Colab
-* [01](01.ipynb) Tipos básicos de datos y operaciones (Numeros y Strings)
-* [02](02.ipynb) Manipulación de Strings 
-* [03](03.ipynb) Estructuras de datos: Listas y Tuplas
-* [04](04.ipynb) Estructuras de datos (continuación): diccionarios
-* [05](05.ipynb) Control de Flujo: sentencias if, for, while, y try
-* [06](06.ipynb) Funciones
-* [07](07.ipynb) Clases y Pogramacion Orientada a Objetos (POO) básico
+* [00](https://github.com/domingo2000/Curso-Python-3/blob/master/Intro-to-Python/00.ipynb) Introducción a Python y como empezar a correrlo en Google Colab
+* [01](https://github.com/domingo2000/Curso-Python-3/blob/master/Intro-to-Python/01.ipynb) Tipos básicos de datos y operaciones (Numeros y Strings)
+* [02](https://github.com/domingo2000/Curso-Python-3/blob/master/Intro-to-Python/02.ipynb) Manipulación de Strings 
+* [03](https://github.com/domingo2000/Curso-Python-3/blob/master/Intro-to-Python/03.ipynb) Estructuras de datos: Listas y Tuplas
+* [04](https://github.com/domingo2000/Curso-Python-3/blob/master/Intro-to-Python/04.ipynb) Estructuras de datos (continuación): diccionarios
+* [05](https://github.com/domingo2000/Curso-Python-3/blob/master/Intro-to-Python/05.ipynb) Control de Flujo: sentencias if, for, while, y try
+* [06](https://github.com/domingo2000/Curso-Python-3/blob/master/Intro-to-Python/06.ipynb) Funciones
+* [07](https://github.com/domingo2000/Curso-Python-3/blob/master/Intro-to-Python/07.ipynb) Clases y Pogramacion Orientada a Objetos (POO) básico
 
 <!-- Unidades extra incluidas en el curso original -->
 <!--- * [08](08.ipynb) Scipy: libraries for arrays (matrices) and plotting --><!--- * [09](09.ipynb) Mixed Integer Linear Programming using the mymip library. -->
