@@ -1,80 +1,71 @@
-<small><small><i>
-Introduction to Python - available from https://gitlab.erc.monash.edu.au/andrease/Python4Maths.git
+# Curso Python Programación
 
-The original version was written by Rajath Kumar and is available at https://github.com/rajathkumarmp/Python-Lectures.
-The notes have been updated for Python 3 and amended for use in Monash University mathematics courses by [Andreas Ernst](http://users.monash.edu.au/~andreas) 
-</small></small></i>
+## Contenidos 📚
 
-# Python-Lectures
+Este curso se separa en varios notebooks (capítulos)
 
-## Introduction
+* [00](00.ipynb) Introducción a Python y como empezar a correrlo en Google Colab
+* [01](01.ipynb) Tipos básicos de datos y operaciones (Numeros y Strings)
+* [02](02.ipynb) Manipulación de Strings 
+* [03](03.ipynb) Estructuras de datos: Listas y Tuplas
+* [04](04.ipynb) Estructuras de datos (continuación): diccionarios
+* [05](05.ipynb) Control de Flujo: sentencias if, for, while, y try
+* [06](06.ipynb) Funciones
+* [07](07.ipynb) Clases y Pogramacion Orientada a Objetos (POO) básico
 
-Python is a modern, robust, high level programming language. It is very easy to pick up even if you are completely new to programming. 
-
-Python, similar to other languages like matlab or R, is interpreted hence runs slowly compared to C++, Fortran or Java. However writing programs in Python is very quick. Python has a very large collection of libraries for everything from scientific computing to web services. It caters for object oriented and functional programming with module system that allows large and complex applications to be developed in Python. 
-
-These lectures are using jupyter notebooks which mix Python code with documentation. The python notebooks can be run on a webserver or stand-alone on a computer.
-
-To give an indication of what Python code looks like, here is a simple bit of code that defines a set $N=\{1,3,4,5,7\}$ and calculates the sum of the squared elements of this set: $$\sum_{i\in N} i^2=100$$
-
-
-```python
-N={1,3,4,5,7}
-print('The sum of ∑_i∈N i*i =',sum( i**2 for i in N ) )
-```
-
-    The sum of ∑_i∈N i*i = 100
+<!-- Unidades extra incluidas en el curso original -->
+<!--- * [08](08.ipynb) Scipy: libraries for arrays (matrices) and plotting --><!--- * [09](09.ipynb) Mixed Integer Linear Programming using the mymip library. -->
+<!--- * [10](10.ipynb) Networks and graphs under python - a very brief introduction -->
+<!--- * [11](11.ipynb) Using the numba library for fast numerical computing. -->
 
 
-## Contents
-
-This course is broken up into a number of notebooks (chapters).
-
-* [00](Intro-to-Python/00.ipynb) This introduction with additional information below on how to get started in running python
-* [01](Intro-to-Python/01.ipynb) Basic data types and operations (numbers, strings) 
-* [02](Intro-to-Python/02.ipynb) String manipulation 
-* [03](Intro-to-Python/03.ipynb) Data structures: Lists and Tuples
-* [04](Intro-to-Python/04.ipynb) Data structures (continued): dictionaries
-* [05](Intro-to-Python/05.ipynb) Control statements: if, for, while, try statements
-* [06](Intro-to-Python/06.ipynb) Functions
-* [07](Intro-to-Python/07.ipynb) Classes and basic object oriented programming
-* [08](Intro-to-Python/08.ipynb) Scipy: libraries for arrays (matrices) and plotting
-* [09](Intro-to-Python/09.ipynb) Mixed Integer Linear Programming using the mymip library
-* [10](Intro-to-Python/10.ipynb) Networks and graphs under python - a very brief introduction
-* [11](Intro-to-Python/11.ipynb) Using the numba library for fast numerical computing.
-    
-
-This is a tutorial style introduction to Python. For a quick reminder / summary of Python syntax the following [Quick Reference Card](http://www.cs.put.poznan.pl/csobaniec/software/python/py-qrc.html) may be useful. A longer and more detailed tutorial style introduction to python is available from the python site at: https://docs.python.org/3/tutorial/
 
 
-## Installation
 
-### Loging into the web server
-The easiest way to run this and other notebooks for staff and students at Monash University is to log into the Jupyter server at [https://sci-web17-v01.ocio.monash.edu.au/hub]. The steps for running notebooks are:
-* Log in using your monash email address. The first time you log in an empty account will automatically be set up for you.
-* Press the start button (if prompted by the system)
-* Use the menu of the jupyter system to upload a .ipynb python notebook file or to start a new notebook.
+Este es un tutorial de introducción a python 3. Para un resumen/torpedo de  toda la syntaxis de python puedes ir al siguiente link [Quick Reference Card](http://www.cs.put.poznan.pl/csobaniec/software/python/py-qrc.html) may be useful. Una version mas detallada a este tutorial esta disponible en la documentación oficial de python. https://docs.python.org/3/tutorial/
 
-### Installing 
+# Introducción
 
-Python runs on windows, linux, mac and other environments. There are many python distributions available. However the recommended way to install python under Microsoft Windows or Linux is to use the Anaconda distribution available at [https://www.continuum.io/downloads]. Make sure to get the Python *3.5* version, not 2.7. This distribution comes with the [SciPy](https://www.scipy.org/) collection of scientific python tools as well as the iron python notebook. For developing python code without notebooks consider using [spyder](https://github.com/spyder-ide/spyder) (also included with Anaconda)
-
-To open a notebook with anaconda installed, from the terminal run:
-
-    ipython notebook
-
-Note that for the Monash University optimisation course additional modules relating to the commercial optimisation library [CPLEX](http://www-01.ibm.com/software/commerce/optimization/cplex-optimizer/index.html) and possibly [Gurobi](http://www.gurobi.com/) may be used. These libraries are not available as part of any standard distribution but are available under academic licence and are included on the [Monash server](https://sci-web17-v01.ocio.monash.edu.au/hub).
-
-## How to learn from this resource?
-
-Download all the  notebooks from Moodle or [https://gitlab.erc.monash.edu.au/andrease/Python4Maths]
-
-Upload them to the monash server and lauch them or launch ipython notebook from the folder which contains the notebooks. Open each one of them
-
-Cell > All Output > Clear
-
-This will clear all the outputs and now you can understand each statement and learn interactively.
+## Google Colab
 
 
-## License
+![Foo](https://raw.githubusercontent.com/domingo2000/Python-Lectures/master/pictures/colab_logo.png)
+
+
+### Instalación 🖥️
+
+Para los fines de este curso trabajaremos con una herramienta online llamada Google Colab la cual tiene muchas ventajas frente a usar una instalación directa de python, algunas de las siguientes son:
+
+1. Servicio en linea igual para todos sin depender del sistema operativo
+2. Sistema de control de versiones, siempre puedes volver atrás igual que un Google Docs
+3. Texto y codigo en un mismo lugar, puedes explicar con "Markdown" tus programas y programar en un solo entorno
+4. Rendimiento, Google Colab corre los codigos por ti y te da recursos, no importa que tengas un mal procesador o una baja RAM.
+5. Es gratis!
+
+![Foo](https://github.com/domingo2000/Python-Lectures/blob/master/pictures/its_free.png?raw=true)
+
+
+## Abriendo un Notebook desde Google Colab 🟠⚪
+
+Para abrir un notebook del material del curso deberás seguir las siguientes instrucciones
+### Instrucciones Abrir Notebook  del Material
+1. Ingresa a https://colab.research.google.com en una pestaña nueva
+2. Selecciona la opción "GitHub" de la siguiente ventana <strong> (En caso de no ver esa ventana ve al paso 2.1 más abajo y luego continua con los demás )</strong>
+![tutorial_colab_1-2.png](attachment:tutorial_colab_1-2.png)
+
+
+5. <strong>Copia</strong> el siguiente link https://github.com/domingo2000/Python-Lectures y pégalo en la primera línea que te deja ingresar texto, luego presiona la lupita.
+![tutorial_colab_2.png](attachment:tutorial_colab_2.png)
+
+6. Por último selecciona el archivo .pynb que quieres abrir, en este caso el 00, !Listo, ahora solo sigue leyendo pero en Google Colab!.
+
+## Licencia
 This work is licensed under the Creative Commons Attribution 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by/3.0/
+
+<small><font style="font-size:6pt"><i>
+Este curso se encuentra disponible en https://github.com/domingo2000/Python-Lectures
+<br>
+La versión original fue escrita por Rajath Kumar y está disponible en
+https://github.com/rajathkumarmp/Python-Lectures.<br>
+Además se sacó esta versión del trabajo de Andreas Ernst desde el siguiente link  https://gitlab.erc.monash.edu.au/andrease/Python4Maths/tree/master
+</i></font></small>
